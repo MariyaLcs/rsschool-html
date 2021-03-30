@@ -1,18 +1,19 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
-body {
+/* body {
   overflow: hidden;
-}
+} */
 .container {
   display: flex;
   height: 100vh;
-  /* box-sizing: border-box; */
   border: 8px solid rebeccapurple;
   flex-direction: column;
 }
-header {
-  height: 20vh;
+.main-header {
+  min-height: 150px;
+  height: 30vh;
   width: 100%;
   background-color: salmon;
 }
@@ -27,8 +28,22 @@ aside {
 }
 .content {
   flex: 3;
+}
+.content-items {
   border: 2px solid rgb(33, 15, 51);
+  display: flex;
+  align-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 footer {
+  height: 5vh;
+}
+.portfolio-item {
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgb(33, 15, 51);
+}
+.content-header {
   height: 5vh;
 }
